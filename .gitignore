@@ -20,8 +20,8 @@
 temp_images/
 output.*
 output/
+*.epub
 
-# Go workspace file
 go.work
 go.work.sum
 

@@ -116,7 +116,7 @@ func main() {
 					// This is a simplification; real HTML structure might need more complex handling.
 					currentSection.WriteString("<p>")
 				} else if currentSection.Len() == 0 {
-					currentSection.WriteString("<p>")
+					// currentSection.WriteString("<p>")
 				}
 				currentSection.WriteString("<p>" + html.EscapeString(trimmedData) + " ") // Add space between text nodes
 				// Add closing tag tentatively; might be overwritten by next element or text
