@@ -36,12 +36,12 @@ func main() {
 	}
 
 	// Create EPUB
-	e, err := epub.NewEpub("Fetched EPUB")
+	e, err := epub.NewEpub("Count of Monte Cristo")
 	if err != nil {
 		log.Fatalf("Error creating EPUB: %v", err)
 		os.Exit(1)
 	}
-	e.SetAuthor("Cline") // You can change this
+	e.SetAuthor("ritikprajapat21") // You can change this
 
 	// Create temporary directory for images
 	if err := os.MkdirAll(tempImageDir, 0755); err != nil {
